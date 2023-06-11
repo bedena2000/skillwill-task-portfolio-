@@ -1,0 +1,45 @@
+.header {
+    padding: 12px 12px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.header-title > h1 {
+    color: #111827;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 10px;
+}
+
+.header-navigation > a {
+    color: #374151;
+    text-decoration: none;
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Media */
+
+@media screen and (max-width: 460px) {
+    .header {
+        padding: 0px 10px;
+    }
+    .header-title {
+        display: none;
+    }
+}
+
